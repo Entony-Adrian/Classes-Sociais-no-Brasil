@@ -1,0 +1,181 @@
+* {
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ade5ff;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: brown;
+}
+
+h1::before {
+    content: "Tema: ";
+    color: black;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+nav ul li {
+    margin: 0 50px;
+    padding-top: 20px;
+}
+
+nav ul li a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: brown;
+    padding: 10px;
+}
+
+nav ul li a::before {
+    content: "Classe:";
+    color: black;
+    margin: 0 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff000042;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+nav ul li a:active {
+    background-color: aqua;
+}
+
+/* 
+nav ul li a:visited{
+    background-color: brown;
+} */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30%;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+}
+
+.card {
+    border-radius: 3%;
+    background-color: #ade5ff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h2 {
+    padding: 20px;
+}
+
+p {
+    margin: 20px 20px;
+}
+
+
+
+p::first-letter {
+    color: brown;
+    font-weight: 900;
+    font-size: 1.3em;
+    margin: 0 3px;
+
+}
+
+p::selection {
+    background-color: brown;
+    color: aliceblue;
+}
+
+img {
+    height: 480px;
+    width: 680px;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+
+}
+
+
+.footer {
+    text-align: center;
+    width: 100%;
+    background-color: #ade5ff;
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    section{
+        text-align:center ;
+        height: 100vh;
+        margin: 0% 0%;
+    }
+
+    .card{
+
+    }
+
+    img {
+        height: 250px;
+        width: auto;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    #alta,
+    #Media,
+    #Baixa {
+        margin-bottom: 40px;
+    }
+}
